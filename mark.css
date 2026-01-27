@@ -1,0 +1,121 @@
+/* RESET */
+* { margin:0; padding:0; box-sizing:border-box; font-family: Georgia, 'Times New Roman', serif; }
+
+/* BODY */
+body {
+  background: url('bible-background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #f9f4e8;
+  line-height: 1.8;
+}
+
+/* HEADER */
+header {
+  background: rgba(0,0,0,0.7);
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 40px;
+  color: #fdd835;
+  margin-bottom: 10px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 6px 12px;
+  transition: background 0.3s;
+}
+
+header nav ul li a:hover {
+  background: #fdd835;
+  color: #000;
+  border-radius: 5px;
+}
+
+/* MAIN CONTENT */
+main {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(0,0,0,0.55);
+  border-radius: 15px;
+}
+
+/* SECTION HEADINGS */
+main section h2 {
+  color: #fdd835;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Times New Roman', serif;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.umwe {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  width: 260px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: transform 0.3s, background 0.3s;
+  text-align: center;
+}
+
+.umwe:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.2);
+}
+
+.umwe .verse {
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+.umwe .btn {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #fdd835;
+  color: #000;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+
+.umwe .btn:hover {
+  background: #ffd700;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.7);
+  margin-top: 40px;
+  font-size: 14px;
+}
+/* EXPANDED CARD */
+.umwe.expanded {
+  transform: scale(1.05);
+  background: blueviolet;
+}
